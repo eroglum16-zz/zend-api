@@ -7,6 +7,9 @@ use Album\Model\Album;
 use Album\Form\AlbumForm;
 use Album\Model\AlbumTable;
 use Zend\View\Model\JsonModel;
+use Zend\Http\Request;
+use Zend\Http\Response;
+use Zend\Http\Client;
 
 class AlbumRestController extends AbstractRestfulController
 {
@@ -17,6 +20,16 @@ class AlbumRestController extends AbstractRestfulController
     public function __construct(AlbumTable $albumTable)
     {
         $this->albumTable = $albumTable;
+    }
+
+    public function loginAction()
+    {
+        $request = $this->params()->fromHeader('Authorization')->getFieldValue();
+
+
+        echo $request;
+
+        exit();
     }
 
     public function documentAction()

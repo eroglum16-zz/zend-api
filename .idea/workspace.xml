@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de582ee3-7729-46c5-8153-114a6e84a22f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/zftutorial.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/zftutorial.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/AlbumRest/src/AlbumRest/Controller/AlbumRestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/AlbumRest/src/AlbumRest/Controller/AlbumRestController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/path/to/install/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/path/to/install/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/path/to/install/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/path/to/install/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/path/to/install/config/modules.config.php" beforeDir="false" afterPath="$PROJECT_DIR$/path/to/install/config/modules.config.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/vendor/composer/" />
     <ignored path="$PROJECT_DIR$/vendor/container-interop/container-interop/" />
@@ -37,19 +41,19 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" doNotAsk="true">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
     </execution>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/module/AlbumRest/src/AlbumRest/Controller/AlbumRestController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="45" column="44" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
+            <state relative-caret-position="556">
+              <caret line="40" column="55" lean-forward="true" selection-start-line="40" selection-start-column="55" selection-end-line="40" selection-end-column="55" />
               <folding>
                 <element signature="e#39#89#0#PHP" expanded="true" />
               </folding>
@@ -58,68 +62,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/phpunit.xml.dist">
+        <entry file="file://$PROJECT_DIR$/module/Album/src/Model/AlbumTable.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/composer.lock">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="2805" column="34" selection-start-line="2805" selection-start-column="31" selection-end-line="2805" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CONDUCT.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CONTRIBUTING.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="135">
-                <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Album/src/Controller/AlbumController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1320">
-              <caret line="88" column="33" lean-forward="true" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="33" />
-              <folding>
-                <element signature="e#36#58#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="570">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
             </state>
           </provider>
         </entry>
@@ -128,16 +74,7 @@
         <entry file="file://$PROJECT_DIR$/module/AlbumRest/config/module.config.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="9" column="62" lean-forward="true" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Album/src/Model/AlbumTable.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+              <caret line="9" column="62" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -175,8 +112,8 @@
         <option value="$PROJECT_DIR$/module/AlbumRest/test/AlbumRestTest/Controller/AlbumRestControllerTest.php" />
         <option value="$PROJECT_DIR$/module/AlbumRest/config/module.config.php" />
         <option value="$PROJECT_DIR$/module/Album/src/Model/AlbumTable.php" />
-        <option value="$PROJECT_DIR$/module/AlbumRest/src/AlbumRest/Controller/AlbumRestController.php" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/module/AlbumRest/src/AlbumRest/Controller/AlbumRestController.php" />
       </list>
     </option>
   </component>
@@ -242,8 +179,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -266,6 +203,43 @@
               <item name="zend-api" type="462c0819:PsiDirectoryNode" />
               <item name="module" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="zend-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zend-api" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="AlbumRest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zend-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zend-api" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="AlbumRest" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zend-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zend-api" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="AlbumRest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zend-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zend-api" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="AlbumRest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="AlbumRest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zend-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zend-api" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="AlbumRest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="AlbumRest" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -276,6 +250,9 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="Errors" />
@@ -303,24 +280,20 @@
       <option name="presentableId" value="Default" />
       <updated>1562143147094</updated>
       <workItem from="1562143148248" duration="9979000" />
+      <workItem from="1562510911343" duration="254000" />
+      <workItem from="1562520130516" duration="2355000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9979000" />
+    <option name="totallyTimeSpent" value="12588000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973376" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25767368" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -328,10 +301,15 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -386,23 +364,8 @@
     <entry file="file://$PROJECT_DIR$/phpcs.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/AlbumRest/test/AlbumRestTest/Controller/AlbumRestControllerTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
-          <folding>
-            <element signature="e#43#71#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/AlbumRest/test/TestConfig.php.dist">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/module/AlbumRest/test/AlbumRestTest/Controller/AlbumRestControllerTest.php" />
+    <entry file="file://$PROJECT_DIR$/module/AlbumRest/test/TestConfig.php.dist" />
     <entry file="file://$PROJECT_DIR$/module/Album/config/module.config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -451,30 +414,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Album/src/Model/AlbumTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/AlbumRest/config/module.config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="62" lean-forward="true" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Album/src/Controller/AlbumController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="88" column="33" lean-forward="true" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="33" />
-          <folding>
-            <element signature="e#36#58#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/zendframework/zend-mvc/src/Controller/AbstractController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="307">
@@ -489,37 +428,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/AlbumRest/src/AlbumRest/Controller/AlbumRestController.php">
+    <entry file="file://$PROJECT_DIR$/module/Album/src/Controller/AlbumController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="44" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
+        <state relative-caret-position="1260">
+          <caret line="88" column="33" lean-forward="true" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="33" />
           <folding>
-            <element signature="e#39#89#0#PHP" expanded="true" />
+            <element signature="e#36#58#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/phpunit.xml.dist">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="2805" column="34" selection-start-line="2805" selection-start-column="31" selection-end-line="2805" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CONDUCT.md">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor />
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          </first_editor>
           <second_editor />
         </state>
       </provider>
@@ -532,13 +456,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/CONDUCT.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="135">
-            <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          </first_editor>
+          <first_editor />
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="2805" column="34" selection-start-line="2805" selection-start-column="31" selection-end-line="2805" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpunit.xml.dist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/AlbumRest/src/AlbumRest/Controller/AlbumRestController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="40" column="55" lean-forward="true" selection-start-line="40" selection-start-column="55" selection-end-line="40" selection-end-column="55" />
+          <folding>
+            <element signature="e#39#89#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Album/src/Model/AlbumTable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/AlbumRest/config/module.config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="62" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
         </state>
       </provider>
     </entry>
