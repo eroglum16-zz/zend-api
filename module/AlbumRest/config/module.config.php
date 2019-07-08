@@ -20,6 +20,12 @@ return array(
         ),
     ),
 
+    'service_manager' => array(
+        'factories' => array(
+            'Application\Cache\Redis' => 'Application\Service\Factory\RedisFactory',
+        )
+    ),
+
     'view_manager' => array(
         'template_path_stack' => array(
             'album-rest' => __DIR__ . '/../view',
