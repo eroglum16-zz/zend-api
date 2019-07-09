@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de582ee3-7729-46c5-8153-114a6e84a22f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/autoload/redis.global.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/users.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module/AlbumRest/src/AlbumRest/Model/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module/AlbumRest/src/AlbumRest/Model/UserTable.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module/Application/Service/Factory/RedisFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/zend-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/zend-api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/load_db.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/load_db.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/Album/src/Controller/LoginController.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/module/Album/src/Model/Album.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/Album/src/Model/Album.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/AlbumRest/Module.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/AlbumRest/Module.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/AlbumRest/config/module.config.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/AlbumRest/config/module.config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/Album/src/Model/AlbumTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/Album/src/Model/AlbumTable.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module/AlbumRest/src/AlbumRest/Controller/AlbumRestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/AlbumRest/src/AlbumRest/Controller/AlbumRestController.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/vendor/composer/" />
@@ -81,8 +67,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/module/AlbumRest/src/AlbumRest/Controller/AlbumRestController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="119" column="35" selection-start-line="119" selection-start-column="35" selection-end-line="119" selection-end-column="35" />
+            <state relative-caret-position="1033">
+              <caret line="161" lean-forward="true" selection-start-line="161" selection-end-line="161" />
               <folding>
                 <element signature="e#39#89#0#PHP" expanded="true" />
                 <element signature="e#587#691#0#PHP" />
@@ -111,18 +97,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/AlbumRest/Module.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="745">
-              <caret line="54" column="79" selection-start-line="54" selection-start-column="79" selection-end-line="54" selection-end-column="79" />
-              <folding>
-                <element signature="e#29#51#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/users.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
@@ -134,8 +108,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/module/AlbumRest/config/module.config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+            <state relative-caret-position="45">
+              <caret line="3" column="67" selection-start-line="3" selection-start-column="67" selection-end-line="3" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -143,8 +117,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/module/Album/src/Model/AlbumTable.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-115">
-              <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+            <state relative-caret-position="71">
+              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
               <folding>
                 <element signature="e#31#52#0#PHP" expanded="true" />
               </folding>
@@ -155,8 +129,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/module/Album/src/Model/Album.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="45" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="615">
+              <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -178,6 +152,8 @@
       <find>exchange</find>
       <find>req</find>
       <find>inputfilter</find>
+      <find>current</find>
+      <find>filter</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/config</dir>
@@ -198,7 +174,6 @@
         <option value="$PROJECT_DIR$/module/AlbumRest/test/TestConfig.php.dist" />
         <option value="$PROJECT_DIR$/phpunit.xml.dist" />
         <option value="$PROJECT_DIR$/module/AlbumRest/test/AlbumRestTest/Controller/AlbumRestControllerTest.php" />
-        <option value="$PROJECT_DIR$/module/Album/src/Model/AlbumTable.php" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/data/load_db.php" />
         <option value="$PROJECT_DIR$/data/users.sql" />
@@ -209,7 +184,9 @@
         <option value="$PROJECT_DIR$/module/Application/Service/Factory/RedisFactory.php" />
         <option value="$PROJECT_DIR$/module/AlbumRest/config/module.config.php" />
         <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/module/Album/src/Model/AlbumTable.php" />
         <option value="$PROJECT_DIR$/module/Album/src/Model/Album.php" />
+        <option value="$PROJECT_DIR$/module/Album/src/Module.php" />
         <option value="$PROJECT_DIR$/module/AlbumRest/src/AlbumRest/Controller/AlbumRestController.php" />
       </list>
     </option>
@@ -299,6 +276,22 @@
             <path>
               <item name="zend-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="zend-api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zend-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zend-api" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zend-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zend-api" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="autoload" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zend-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zend-api" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="zend-api" type="b2602c69:ProjectViewProjectNode" />
@@ -505,7 +498,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29606000" />
+    <option name="totallyTimeSpent" value="32539000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -650,16 +643,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Album/src/Module.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="5" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="32" selection-end-column="5" />
-          <folding>
-            <element signature="e#25#62#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/Album/src/Form/AlbumForm.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -673,23 +656,6 @@
           <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
           <folding>
             <element signature="e#36#58#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/users.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="44" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/AlbumRest/Module.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="745">
-          <caret line="54" column="79" selection-start-line="54" selection-start-column="79" selection-end-line="54" selection-end-column="79" />
-          <folding>
-            <element signature="e#29#51#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -710,13 +676,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="161" column="12" lean-forward="true" selection-start-line="161" selection-start-column="12" selection-end-line="161" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/autoload/redis.global.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -768,13 +727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/AlbumRest/config/module.config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/elasticsearch/elasticsearch/src/Elasticsearch/ClientBuilder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -784,25 +736,66 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/module/Album/src/Model/Album.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="615">
+          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Album/src/Module.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+          <folding>
+            <element signature="e#25#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/AlbumRest/Module.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+          <folding>
+            <element signature="e#29#51#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/autoload/redis.global.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/users.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="44" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module/Album/src/Model/AlbumTable.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-115">
-          <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+        <state relative-caret-position="71">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
           <folding>
             <element signature="e#31#52#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/module/AlbumRest/config/module.config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="67" selection-start-line="3" selection-start-column="67" selection-end-line="3" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/module/AlbumRest/src/AlbumRest/Controller/AlbumRestController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="119" column="35" selection-start-line="119" selection-start-column="35" selection-end-line="119" selection-end-column="35" />
+        <state relative-caret-position="1033">
+          <caret line="161" lean-forward="true" selection-start-line="161" selection-end-line="161" />
           <folding>
             <element signature="e#39#89#0#PHP" expanded="true" />
             <element signature="e#587#691#0#PHP" />

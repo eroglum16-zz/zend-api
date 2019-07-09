@@ -18,6 +18,12 @@ class AlbumTable
         return $this->tableGateway->select();
     }
 
+    public function fetchAllArray()
+    {
+        $rowset = $this->tableGateway->select();
+        return $rowset->toArray();
+    }
+
     public function getAlbum($id)
     {
         $id = (int) $id;

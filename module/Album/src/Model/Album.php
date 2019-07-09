@@ -46,6 +46,7 @@ class Album implements InputFilterAwareInterface
 
     public function getInputFilter()
     {
+        
         if ($this->inputFilter) {
             return $this->inputFilter;
         }

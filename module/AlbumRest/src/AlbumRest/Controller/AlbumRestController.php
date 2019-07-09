@@ -109,54 +109,12 @@ class AlbumRestController extends AbstractRestfulController
             ->build();
         /* -------------------------------------------------- */
 
-        $albums = $this->albumTable->fetchAll();
-
-        $array = (array) $albums->current();
-
-        $multi_array = array();
-        array_push($multi_array,$array);
-
-        foreach ($albums as $album){
-            array_push($multi_array, $album);
-        }
-
-        $params = [
-            'index' => 'my_index',
-            'body'  => ['id'=>1,'hi'=>"to"]
-        ];
-
-        $client->index($params);
-
-        $params = [
-            'index' => 'my_index',
-            'body'  => [
-                'query' => [
-                    'match' => [
-                        'artist' => 'The Military Wives',
-                    ],
-                    'match' => [
-                        'title' => 'The Military Wives',
-                    ]
-                ]
-            ]
-        ];
-
-        $results = $client->search($params);
-
-
-        //echo $results['hits']['totals'];
-        var_dump($multi_array);
-
-
-
-        //var_dump($multi_array);
-
-        //return new JsonModel($results["hits"]["hits"][0]["_source"]);
-        exit();
 
 
         /* -------------  Showing the Documents ------------- */
         $id = (int) $this->params()->fromRoute('id', 0);
+
+        //  (url)/document/{id}
         if ($id != 0) {
             $results = $this->albumTable->getAlbumArray($id);
             $response = $this->getResponse();
@@ -164,7 +122,7 @@ class AlbumRestController extends AbstractRestfulController
 
             return new JsonModel($results);
         }else {
-
+            //  (url)/document?#id
             if($this->params()->fromQuery('id')){
                 $id = (int) $this->params()->fromQuery('id');
 
@@ -175,8 +133,49 @@ class AlbumRestController extends AbstractRestfulController
                 $response->setStatusCode(200);
 
                 return new JsonModel($results);
-            }elseif ($this->params()->fromQuery('keyword')){
-                return new JsonModel(array());
+            }
+            //  (url)/document?#keyword
+            elseif ($this->params()->fromQuery('keyword')){
+
+                $albums = $this->albumTable->fetchAllArray();
+                $keyword = $this->params()->fromQuery('keyword');
+
+                foreach ($albums as $album){
+                    $params = [
+                        'index' => 'albums',
+                        'body'  => $album,
+                        'type' => 'album',
+                        'id' => $album['id']
+                    ];
+
+                    $client->index($params);
+                }
+
+                $params = [
+                    'index' => 'albums',
+                    'body'  => [
+                        'query' => [
+                            'match' => ['artist'=>$keyword]
+                        ]
+                    ]
+                ];
+
+                $results = $client->search($params);
+
+                if ($results['hits']['total']==0){
+                    $params = [
+                        'index' => 'albums',
+                        'body'  => [
+                            'query' => [
+                                'match' => ['title'=>$keyword]
+                            ]
+                        ]
+                    ];
+                    $results = $client->search($params);
+                }
+
+                return new JsonModel($results["hits"]["hits"][0]["_source"]);
+
             }else{
                 return new JsonModel(array());
             }
