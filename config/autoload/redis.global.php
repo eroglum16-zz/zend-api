@@ -1,7 +1,7 @@
 <?php
 return array(
     'redis' => array(
-        'host' => '127.0.0.1',
+        'host' => 'php7_cache',
         'port' => '6379'
     )
 );

@@ -20,6 +20,12 @@ class AlbumController extends AbstractActionController
 
     public function indexAction()
     {
+
+        http_response_code(403);
+        echo "<h1>Forbidden</h1> You have no permission to access these documents!";
+        exit();
+
+
         return new ViewModel([
             'albums' => $this->table->fetchAll(),
         ]);
@@ -27,6 +33,10 @@ class AlbumController extends AbstractActionController
 
     public function addAction()
     {
+        http_response_code(403);
+        echo "<h1>Forbidden</h1> You have no permission to access these documents!";
+        exit();
+
         $form = new AlbumForm();
         $form->get('submit')->setValue('Add');
 
@@ -51,6 +61,10 @@ class AlbumController extends AbstractActionController
 
     public function editAction()
     {
+        http_response_code(403);
+        echo "<h1>Forbidden</h1> You have no permission to access these documents!";
+        exit();
+
         $id = (int) $this->params()->fromRoute('id', 0);
 
         if (0 === $id) {
@@ -92,6 +106,11 @@ class AlbumController extends AbstractActionController
 
     public function deleteAction()
     {
+
+        http_response_code(403);
+        echo "<h1>Forbidden</h1> You have no permission to access these documents!";
+        exit();
+
         $id = (int) $this->params()->fromRoute('id', 0);
         if (!$id) {
             return $this->redirect()->toRoute('album');

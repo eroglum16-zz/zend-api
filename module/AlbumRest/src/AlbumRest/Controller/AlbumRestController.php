@@ -28,6 +28,11 @@ class AlbumRestController extends AbstractRestfulController
     public function loginAction()
     {
 
+        if ($this->params()->fromHeader('Authorization')==null){
+            http_response_code(401);
+            echo "You need to send username and password as headers!";
+            exit();
+        }
         $request_auth = $this->params()->fromHeader('Authorization')->getFieldValue();
 
         $auth_string = $this->user . ":" . $this->pass;
@@ -38,11 +43,10 @@ class AlbumRestController extends AbstractRestfulController
             header("Bearer-Token:".$token);
 
             $redis = new Predis\Client(array(
-                "scheme" => "tcp",
-                "host" => "127.0.0.1",
+                "host" => "php7_cache",
                 "port" => 6379));
 
-            $exp_time = strtotime("+15 minutes");
+            $exp_time = strtotime("+5 minutes");
 
             $redis->lpush($token, $token);
             $redis->lpush($token, $exp_time);
@@ -68,8 +72,7 @@ class AlbumRestController extends AbstractRestfulController
         /* ---------- Redis Configurations ---------- */
         $redis = new Predis\Client(
             array(
-            "scheme" => "tcp",
-            "host" => "127.0.0.1",
+            "host" => "php7_cache",
             "port" => 6379
             )
         );
