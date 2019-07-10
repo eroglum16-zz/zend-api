@@ -13,3 +13,8 @@ php7_cache:
     - "6380:6379"
   environment:
     - ALLOW_EMPTY_PASSWORD=yes
+composer:
+  image: composer/composer:php7
+  command: install
+  volumes:
+    - .:/var/www

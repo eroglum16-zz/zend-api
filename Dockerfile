@@ -23,14 +23,6 @@ RUN apt-get install --yes zlib1g-dev libicu-dev g++ \
 RUN yes '' | pecl install redis \
     && echo 'extension=redis.so' >> /usr/local/etc/php/php.ini
 
-#RUN apt-get install --yes redis-server
-
-RUN curl -sS https://getcomposer.org/installer | php \
-    && chmod +x composer.phar \
-    && mv composer.phar /usr/local/bin/composer
-
-RUN composer install
-
 # Make port 80 available to the world outside this container
 EXPOSE 80
 
