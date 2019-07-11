@@ -2,10 +2,10 @@
 FROM php:7.2-fpm
 
 # Set the working directory to /app
-WORKDIR /var/www
+WORKDIR /app
 
 # Copy the current directory contents into the container at /app
-COPY . /var/www
+COPY . /app
 
 RUN apt-get update \
  && apt-get install nano

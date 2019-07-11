@@ -4,7 +4,7 @@ zf:
   ports:
    - "8080:80"
   volumes:
-   - .:/var/www
+   - .:/app
   links:
     - php7_cache
 php7_cache:
@@ -19,5 +19,4 @@ php7_composer:
   environment:
     - "COMPOSER_AUTH=${COMPOSER_AUTH}"
   volumes:
-    - ../var/www
-
+    - .:/app
