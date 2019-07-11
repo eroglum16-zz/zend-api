@@ -20,3 +20,4 @@ php7_composer:
     - "COMPOSER_AUTH=${COMPOSER_AUTH}"
   volumes:
     - ../var/www
+
