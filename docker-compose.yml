@@ -13,3 +13,10 @@ php7_cache:
     - "6380:6379"
   environment:
     - ALLOW_EMPTY_PASSWORD=yes
+php7_composer:
+  image: composer:latest
+  command: install --ignore-platform-reqs
+  environment:
+    - "COMPOSER_AUTH=${COMPOSER_AUTH}"
+  volumes:
+    - ../var/www
