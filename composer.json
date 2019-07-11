@@ -24,7 +24,7 @@
         "zendframework/zend-modulemanager": "^2.8",
         "zendframework/zend-servicemanager": "^3.4",
         "predis/predis": "^1.1",
-        "elasticsearch/elasticsearch": "^7.0"
+        "elasticsearch/elasticsearch": "^7.0.0"
     },
     "autoload": {
         "psr-4": {

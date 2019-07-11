@@ -93,11 +93,21 @@ class AlbumRestController extends AbstractRestfulController
         /* -------------------------------------------------- */
 
         /* ---------- Elastic Search Configurations ---------- */
+        $hosts = [
+            [
+                'host' => '0.0.0.0',
+                'port' => 9200,
+            ]
+        ];
+        $client = Elasticsearch\ClientBuilder::create()->setHosts($hosts)->build();
+
+
         $client = Elasticsearch\ClientBuilder::create()->build();
         $defaultHandler = Elasticsearch\ClientBuilder::defaultHandler();
         $client = Elasticsearch\ClientBuilder::create()
             ->setHandler($defaultHandler)
             ->build();
+
         $connectionPool = '\Elasticsearch\ConnectionPool\StaticNoPingConnectionPool';
         $client = Elasticsearch\ClientBuilder::create()
             ->setConnectionPool($connectionPool)
@@ -110,6 +120,7 @@ class AlbumRestController extends AbstractRestfulController
         $client = Elasticsearch\ClientBuilder::create()
             ->setSerializer($serializer)
             ->build();
+
         /* -------------------------------------------------- */
 
 

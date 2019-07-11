@@ -10,12 +10,17 @@ Amacımız Rest Api üzerinden hizmet veren bir yapı kurulması. Sunulan dök�
 
 `$ git clone https://github.com/eroglum16/zend-api.git`
 
-Projenin olduğu dizine giderek aşağıdaki komutları çalıştırın:
+Projenin olduğu dizine giderek aşağıdaki komutu çalıştırın:
 
-`$ docker build -t zend-api .`
+`$ docker-compose up`
+
+Projenin gereksinimlerinin composer tarafında yüklenmesi biraz zaman alacaktır. 
+Sonrasında bilgisayarınızdaki 0.0.0.0:8080 adresinden ve portundan uygulamaya erişebilirsiniz. 
+Restful API modülünün login endpoint'inden giriş yapmadığınız sürece doköümanlara erişim izni verilmeyecektir.
+Bunu sağlanan postman collection'ı kullanarak Postman üzerinden yapabilirsiniz.
 
 ## Endpointler
 
-`(url)/document/{id}`
+`0.0.0.0:8080/album-rest/document/{id}`
 
-`(url)/document?{query_params: #keyword #id}`
+`0.0.0.0:8080/album-rest/document?{query_params: #keyword #id}`

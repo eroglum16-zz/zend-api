@@ -7,6 +7,7 @@ zf:
    - .:/app
   links:
     - php7_cache
+    - elasticsearch
 php7_cache:
   image: redis:latest
   ports:
@@ -20,3 +21,7 @@ php7_composer:
     - "COMPOSER_AUTH=${COMPOSER_AUTH}"
   volumes:
     - .:/app
+elasticsearch:
+  image: docker.elastic.co/elasticsearch/elasticsearch:7.1.0
+  container_name: elasticsearch
+  ports: ['9200:9200']
