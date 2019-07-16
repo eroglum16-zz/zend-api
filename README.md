@@ -17,7 +17,7 @@ Projenin olduğu dizine giderek aşağıdaki komutu çalıştırın:
 Projenin gereksinimlerinin composer tarafından yüklenmesi biraz zaman alacaktır. 
 Sonrasında bilgisayarınızdaki 0.0.0.0:8080 adresinden ve portundan uygulamaya erişebilirsiniz. 
 Restful API modülünün login endpoint'inden giriş yapmadığınız sürece doköümanlara erişim izni verilmeyecektir.
-Bunu sağlanan postman collection'ı kullanarak Postman üzerinden yapabilirsiniz. 
+Bunu verilen postman collection'ı kullanarak Postman üzerinden yapabilirsiniz. Login olduktan sonra gelen sunucu response header'larından bearer-token kopyalanmalı ve dökumanlara erişirken Authorization olarak bearer token seçilip kopyalanan token kullanılmalıdır.
 
 ## Endpointler
 
