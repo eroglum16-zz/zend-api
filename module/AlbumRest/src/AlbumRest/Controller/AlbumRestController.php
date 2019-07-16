@@ -23,6 +23,7 @@ class AlbumRestController extends AbstractRestfulController
     public function __construct(AlbumTable $albumTable)
     {
         $this->albumTable = $albumTable;
+
     }
 
     public function loginAction()
@@ -62,6 +63,7 @@ class AlbumRestController extends AbstractRestfulController
 
     public function documentAction()
     {
+
         //Authorization string from headers
         $authorization = $this->params()->fromHeader('Authorization')->getFieldValue();
 
@@ -72,8 +74,8 @@ class AlbumRestController extends AbstractRestfulController
         /* ---------- Redis Configurations ---------- */
         $redis = new Predis\Client(
             array(
-            "host" => "php7_cache",
-            "port" => 6379
+                "host" => "php7_cache",
+                "port" => 6379
             )
         );
         /* ------------------------------------------ */
@@ -93,33 +95,22 @@ class AlbumRestController extends AbstractRestfulController
         /* -------------------------------------------------- */
 
         /* ---------- Elastic Search Configurations ---------- */
-        $hosts = [
-            [
-                'host' => '0.0.0.0',
-                'port' => 9200,
-            ]
-        ];
+
+        $hosts = ['elasticsearch:9200'];
         $client = Elasticsearch\ClientBuilder::create()->setHosts($hosts)->build();
 
+        $albums = $this->albumTable->fetchAllArray();
 
-        $client = Elasticsearch\ClientBuilder::create()->build();
-        $defaultHandler = Elasticsearch\ClientBuilder::defaultHandler();
-        $client = Elasticsearch\ClientBuilder::create()
-            ->setHandler($defaultHandler)
-            ->build();
+        foreach ($albums as $album){
+            $params = [
+                'index' => 'albums',
+                'body'  => $album,
+                'type' => 'album',
+                'id' => $album['id']
+            ];
 
-        $connectionPool = '\Elasticsearch\ConnectionPool\StaticNoPingConnectionPool';
-        $client = Elasticsearch\ClientBuilder::create()
-            ->setConnectionPool($connectionPool)
-            ->build();
-        $selector = '\Elasticsearch\ConnectionPool\Selectors\StickyRoundRobinSelector';
-        $client = Elasticsearch\ClientBuilder::create()
-            ->setSelector($selector)
-            ->build();
-        $serializer = '\Elasticsearch\Serializers\SmartSerializer';
-        $client = Elasticsearch\ClientBuilder::create()
-            ->setSerializer($serializer)
-            ->build();
+            $client->index($params);
+        }
 
         /* -------------------------------------------------- */
 
@@ -151,19 +142,11 @@ class AlbumRestController extends AbstractRestfulController
             //  (url)/document?#keyword
             elseif ($this->params()->fromQuery('keyword')){
 
-                $albums = $this->albumTable->fetchAllArray();
+
+
                 $keyword = $this->params()->fromQuery('keyword');
 
-                foreach ($albums as $album){
-                    $params = [
-                        'index' => 'albums',
-                        'body'  => $album,
-                        'type' => 'album',
-                        'id' => $album['id']
-                    ];
 
-                    $client->index($params);
-                }
 
                 $params = [
                     'index' => 'albums',
@@ -176,7 +159,10 @@ class AlbumRestController extends AbstractRestfulController
 
                 $results = $client->search($params);
 
-                if ($results['hits']['total']==0){
+
+
+                if ($results['hits']['total']['value']==0){
+
                     $params = [
                         'index' => 'albums',
                         'body'  => [
@@ -198,4 +184,5 @@ class AlbumRestController extends AbstractRestfulController
 
 
     }
+
 }
