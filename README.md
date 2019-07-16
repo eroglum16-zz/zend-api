@@ -2,7 +2,7 @@
 
 ## Proje Tanımı
 
-Amacımız Rest Api üzerinden hizmet veren bir yapı kurulması. Sunulan dökümanlar sanatçı ve albümlerinden oluşuyor.
+Amacımız Rest Api üzerinden hizmet veren bir yapı kurulması. Sunulan dökümanlar sanatçı ve albümlerinden oluşuyor.
 
 ## Projenin Ayağa Kaldırılması
 
@@ -14,12 +14,14 @@ Projenin olduğu dizine giderek aşağıdaki komutu çalıştırın:
 
 `$ docker-compose up`
 
-Projenin gereksinimlerinin composer tarafında yüklenmesi biraz zaman alacaktır. 
+Projenin gereksinimlerinin composer tarafından yüklenmesi biraz zaman alacaktır. 
 Sonrasında bilgisayarınızdaki 0.0.0.0:8080 adresinden ve portundan uygulamaya erişebilirsiniz. 
 Restful API modülünün login endpoint'inden giriş yapmadığınız sürece doköümanlara erişim izni verilmeyecektir.
-Bunu sağlanan postman collection'ı kullanarak Postman üzerinden yapabilirsiniz.
+Bunu sağlanan postman collection'ı kullanarak Postman üzerinden yapabilirsiniz. 
 
 ## Endpointler
+
+`0.0.0.0:8080/album-rest/login`
 
 `0.0.0.0:8080/album-rest/document/{id}`
 
